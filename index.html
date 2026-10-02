@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Enterprise Developer Portfolio"
+  >
+
+  <title>Enterprise Developer Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+
+    <nav class="navbar" aria-label="Primary navigation">
+
+      <a href="#home" class="logo">
+        Developer Portfolio
+      </a>
+
+      <button
+        type="button"
+        id="theme-toggle"
+        class="theme-toggle"
+        aria-label="Switch to light theme"
+        aria-pressed="false"
+      >
+        <span id="theme-icon" aria-hidden="true">☀</span>
+        <span id="theme-text">Light Mode</span>
+      </button>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          Enterprise Developer
+        </p>
+
+        <h1>
+          Building Modern Web Applications
+        </h1>
+
+        <p>
+          I create accessible, responsive and maintainable
+          web applications using modern web technologies.
+        </p>
+
+        <a href="#contact" class="button">
+          Contact Me
+        </a>
+
+      </div>
+
+      <div class="hero-image">
+
+        <img
+          src="https://via.placeholder.com/320x320"
+          width="320"
+          height="320"
+          alt="Portrait of the developer"
+        >
+
+      </div>
+
+    </section>
+
+
+    <!-- Skills Matrix -->
+    <section id="skills" class="section">
+
+      <header class="section-header">
+        <p class="eyebrow">Skills</p>
+        <h2>Skills Matrix</h2>
+      </header>
+
+      <div class="skills-grid">
+
+        <article class="skill-card">
+          <h3>Frontend</h3>
+
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+          </ul>
+        </article>
+
+
+        <article class="skill-card">
+          <h3>Backend</h3>
+
+          <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>REST API</li>
+            <li>Database</li>
+          </ul>
+        </article>
+
+
+        <article class="skill-card">
+          <h3>Tools</h3>
+
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>Chrome DevTools</li>
+          </ul>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Project Cards -->
+    <section id="projects" class="section">
+
+      <header class="section-header">
+        <p class="eyebrow">Portfolio</p>
+        <h2>Projects</h2>
+      </header>
+
+
+      <div class="projects-grid">
+
+        <article
+          class="project-card"
+          data-category="frontend"
+        >
+
+          <header class="card-header">
+
+            <h3>
+              Enterprise Web System
+            </h3>
+
+            <span class="badge">
+              Frontend
+            </span>
+
+          </header>
+
+          <p>
+            A responsive enterprise web application
+            designed for business users.
+          </p>
+
+          <footer class="card-footer">
+
+            <a
+              href="#"
+              aria-label="View Enterprise Web System project"
+            >
+              Source Code
+            </a>
+
+          </footer>
+
+        </article>
+
+
+        <article
+          class="project-card"
+          data-category="backend"
+        >
+
+          <header class="card-header">
+
+            <h3>
+              REST API Platform
+            </h3>
+
+            <span class="badge">
+              Backend
+            </span>
+
+          </header>
+
+          <p>
+            A RESTful API built with Node.js and Express
+            for enterprise applications.
+          </p>
+
+          <footer class="card-footer">
+
+            <a
+              href="#"
+              aria-label="View REST API Platform project"
+            >
+              Source Code
+            </a>
+
+          </footer>
+
+        </article>
+
+
+        <article
+          class="project-card"
+          data-category="frontend"
+        >
+
+          <header class="card-header">
+
+            <h3>
+              Accessibility Project
+            </h3>
+
+            <span class="badge">
+              Accessibility
+            </span>
+
+          </header>
+
+          <p>
+            A web interface designed with accessibility
+            and keyboard usability in mind.
+          </p>
+
+          <footer class="card-footer">
+
+            <a
+              href="#"
+              aria-label="View Accessibility Project"
+            >
+              Source Code
+            </a>
+
+          </footer>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Contact Form -->
+    <section id="contact" class="section">
+
+      <header class="section-header">
+        <p class="eyebrow">Contact</p>
+        <h2>Contact Me</h2>
+      </header>
+
+
+      <form id="contact-form" novalidate>
+
+        <div class="form-group">
+
+          <label for="name">
+            Name
+          </label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            minlength="2"
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="email">
+            Email
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="message">
+            Message
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            minlength="10"
+          ></textarea>
+
+        </div>
+
+
+        <button type="submit" class="button">
+          Send Message
+        </button>
+
+        <p
+          id="form-status"
+          class="form-status"
+          aria-live="polite"
+        ></p>
+
+      </form>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <p>
+      &copy; 2026 Enterprise Developer Portfolio
+    </p>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
